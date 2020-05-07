@@ -1,0 +1,32 @@
+# Complexity 
+
+## the time complextiy is based on the input size usually called N
+
+# Commom orders of growth.
+
+We use the __init__() method to initialize (e.g., specify) an object’s initial attributes by giving them their default value (or state). 
+This is analogous to a constructor in Java. The __init__()__ method must have at least one argument as well as the self variable,
+ which refers to the object itself (e.g., Dog). 
+
+
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+So what this constructor does is set the instance variable self.name equal to the argument provided when creating the Dog object.
+
+my_dog = Dog("Snoopy", 8)
+print(my_dog.name) # "Snoopy"
+print(my_dog.age) # 8
+
+NOTE: You will never have to call the init() method; it gets called automatically when you create a new ‘Dog’ instance.
+
+## Various Time comlexities 
+
+1. Linked list 
+
+Insert at the Front - O(1) - since one could access the head in constant time
+remove from the Front - O(1) - since it takes constant time to access the head Node 
+
